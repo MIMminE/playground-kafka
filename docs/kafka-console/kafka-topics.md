@@ -4,6 +4,7 @@ Kafka 시스템을 설치하면 기본적으로 함게 제공되는 클라이언
 카프카가 설치된 디렉토리의 /bin 패키지 하위에 존재하며 토픽 관리와 관련된
 콘솔 클라이언트는 kafka-topics.sh 로 제공된다.
 
+---
 ### 토픽 조회
 ```shell
 kafka-topics --bootstrap-server localhost:9092 --list
@@ -26,7 +27,7 @@ kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic test_topic
 Topic: test_topic  PartitionCount: 1  ReplicationFactor: 1  Configs:
     Topic: test_topic  Partition: 0  Leader: 1  Replicas: 1  Isr: 1
 ```
-
+---
 ### 토픽 생성 
 ```shell
 kafka-topics.sh --bootstrap-server localhost:9092 --create --topic my-topic --partitions 3 --replication-factor 2

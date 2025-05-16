@@ -17,6 +17,8 @@ void createAdminClient() {
 }
 ```
 **AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG** 는 카프카 콘솔 클라이언트에서 브로커 서버를 제공하던 옵션인 '**--bootstrap-server**' 와 같은 요소라고 볼 수 있다.
+
+---
 ### 토픽 생성 (createTopics)
 ```java
 void createTopics() {
